@@ -1,0 +1,59 @@
+#flower-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.greeting-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+.popup img {
+    width: 150px;
+    animation: bloom 1.5s ease-out;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff69b4;
+    animation: fadeIn 2s;
+}
+
+@keyframes bloom {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
